@@ -68,7 +68,7 @@ def test_to_list(string, expected):
 
 
 @pytest.mark.parametrize("arr,s1,s2,expected", [
-    (["Robin", "Singh"], "Welcome", "airport", "Hello, Robin Singh! Welcome to airport"),
+    (["Robin", "Singh"], "Minsk", "Belarus", "Привет, Robin Singh! Добро пожаловать в Minsk Belarus"),
 ])
 def test_formatting(arr, s1, s2, expected):
     assert formatting(arr, s1, s2) == expected, f"Expected {expected}, from input: {arr}, {s1}, {s2}"
