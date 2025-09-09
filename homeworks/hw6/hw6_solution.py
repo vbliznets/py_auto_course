@@ -1,0 +1,6 @@
+def motor_time(n: int):
+    tm ='{:02d}:{:02d}'.format(*divmod(n, 60))
+    print(tm)
+    result = int(tm[0]) + int(tm[1]) + int(tm[3]) + int(tm[4])
+    return result
+
