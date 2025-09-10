@@ -3,7 +3,7 @@ from datetime import datetime
 
 def motor_time(n: int):
     hh, mm = divmod(n, 60)
-    tm = f"{hh: 02d}: {mm: 02d}"
+    tm = f"{hh:02d}:{mm:02d}"
     print(tm)
     result = int(tm[0]) + int(tm[1]) + int(tm[3]) + int(tm[4])
     return result
