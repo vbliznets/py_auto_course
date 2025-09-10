@@ -4,3 +4,8 @@ def motor_time(n: int):
     result = int(tm[0]) + int(tm[1]) + int(tm[3]) + int(tm[4])
     return result
 
+
+def level_up (xpNow, levelUp, xpGet: int) -> bool:
+    return xpNow + xpGet >= levelUp
+
+def
