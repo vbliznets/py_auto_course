@@ -8,4 +8,10 @@ def motor_time(n: int):
 def level_up (xpNow, levelUp, xpGet: int) -> bool:
     return xpNow + xpGet >= levelUp
 
-def
+
+from datetime import datetime
+def time_converter(timeStr: str) -> str:
+    full_h = datetime.strptime(timeStr, "%H:%M")
+    part_h = full_h.strftime("%I:%M %p").lower().replace('pm', 'p.m.').replace('am', 'a.m.').lstrip('0')
+    return part_h
+
